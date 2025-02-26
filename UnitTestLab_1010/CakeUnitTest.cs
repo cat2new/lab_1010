@@ -1,11 +1,6 @@
 ﻿using ClassLibrary1;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TestProject4
+namespace UnitTestLab_1010
 {
     [TestClass]
     public class CakeUnitTest
@@ -58,6 +53,6 @@ namespace TestProject4
             Assert.IsTrue(cake1.Equals(cake2));
             Assert.IsFalse(cake1.Equals(cake3));
         }
-        
+
     }
 }

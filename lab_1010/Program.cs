@@ -353,7 +353,7 @@ namespace lab_1010
                 Console.WriteLine("\nВыберите сортировку:");
                 Console.WriteLine("1. Сортировка по цене");
                 Console.WriteLine("2. Сортировка по названию");
-                Console.WriteLine("3. назад");
+                Console.WriteLine("3. Назад");
                 string choice = Console.ReadLine();
                 switch (choice)
                 {
