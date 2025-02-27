@@ -60,7 +60,7 @@ namespace ClassLibrary1
             name = Console.ReadLine();
             while (name == ""|| name is null)
             {
-                Console.WriteLine("Вы не ввели название кондитерского изделия! Пожалуйста, введит еще раз"); // вывод об ошибке
+                Console.WriteLine("Вы не ввели название кондитерского изделия! Пожалуйста, введите еще раз"); 
                 name = Console.ReadLine();
             }
             Console.WriteLine("Введите цену: ");
@@ -68,7 +68,7 @@ namespace ClassLibrary1
 
             while (!double.TryParse(Console.ReadLine(), out price) || price < 0)
             {
-                Console.WriteLine("Цена должна быть положительной! Пожалуйста, введите еще раз число больше 0"); // вывод об ошибке
+                Console.WriteLine("Цена должна быть положительной! Пожалуйста, введите еще раз число больше 0"); 
                 
             }
         }

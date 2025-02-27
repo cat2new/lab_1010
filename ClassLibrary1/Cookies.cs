@@ -44,7 +44,7 @@ namespace ClassLibrary1
             base.Init();
             Console.WriteLine("Введите форму печенья :либо 'Круг', либо 'Звезда' ");
 
-            string value = Console.ReadLine(); // поменять название
+            string value = Console.ReadLine(); 
             while (value != "Круг" && value != "Звезда")
             {
                 Console.WriteLine("Неправильно введена форма печенья! Пожалуйста, введите еще раз, выбрав 'Круг' или 'Звезда'");

@@ -42,7 +42,7 @@ namespace ClassLibrary1
             base.Init();
             Console.WriteLine("Выберите вид шоколада :либо 'Молочный', либо 'Темный', либо 'Белый' "); 
 
-            string value = Console.ReadLine(); // поменять название
+            string value = Console.ReadLine(); 
             while (value != "Молочный" && value != "Темный" && value != "Белый")
             {
                 Console.WriteLine("Неправильно введен вид шоколада! Пожалуйста, введите еще раз, выбрав либо 'Молочный', либо 'Темный', либо 'Белый'");

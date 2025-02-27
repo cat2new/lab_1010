@@ -23,7 +23,7 @@ namespace ConfLib
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("чистло меньше 0");
+                    throw new ArgumentException("Число меньше нуля!");
 
                 }
                 number = value;
