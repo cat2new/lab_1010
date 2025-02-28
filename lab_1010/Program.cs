@@ -1,4 +1,5 @@
 ﻿using ClassLibrary1;
+using ConfLib;
 using MarkLib;
 
 
@@ -401,7 +402,7 @@ namespace lab_1010
             cloneProduct.Show();
             Console.WriteLine(cloneProduct.id.ToString());
             ConfProd shallowCopiedProduct = (ConfProd)originalProduct.ShallowCopy();
-            Console.WriteLine("\nповерхн.скоп объект");
+            Console.WriteLine("\nGоверхностно скопированный объект:");
             shallowCopiedProduct.Show();
             Console.WriteLine(shallowCopiedProduct.id.ToString());
 

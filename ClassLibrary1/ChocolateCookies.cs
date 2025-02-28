@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
+   
+
     public class ChocolateCookies : Cookies
     {
         private string chocolate;
 
+        
         public ChocolateCookies()
         {
             chocolate = "";
+            
         }
 
         public ChocolateCookies(string name, double price, string shape, string chocolate, int id) : base(name, price, shape, id)
@@ -25,7 +29,7 @@ namespace ClassLibrary1
             set
             {
 
-                if (value != "Молочный" && value != "Темный" && value != "Белый")
+                if (value != "Молочный" && value != "Темный" && value != "Белый") // enum
                 {
                     throw new ArgumentException("Вид шоколада должен быть либо 'Молочный', либо 'Темный', либо 'Белый'");
                 }

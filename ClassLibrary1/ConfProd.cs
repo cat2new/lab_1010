@@ -75,7 +75,7 @@ namespace ClassLibrary1
         public virtual void RandomInit()
         {
             Random rand = new Random();
-            name = "Издклие " + rand.Next(1, 100);
+            name = "Изделие " + rand.Next(1, 100);
             price = Math.Round(rand.NextDouble() * 1000, 2);
         }
 
