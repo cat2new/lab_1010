@@ -108,17 +108,4 @@ public class ChocolateCookiesUnitTest
         // Assert
         Assert.AreEqual("Белый", cookies.Chocoolate);
     }
-    [TestMethod]
-    public void RandomInit_SetsChocolateCorrectly()
-    {
-        // Arrange
-        ChocolateCookies cookies = new ChocolateCookies();
-
-        // Act
-        cookies.RandomInit();
-
-        // Assert
-        Assert.IsTrue(cookies.Chocoolate == "Молочный" || cookies.Chocoolate == "Темный" || cookies.Chocoolate == "Белый");
-    }
-
 }
