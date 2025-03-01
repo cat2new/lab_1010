@@ -29,7 +29,7 @@ namespace ClassLibrary1
             set
             {
 
-                if (value != "Молочный" && value != "Темный" && value != "Белый") // enum
+                if (value != "Молочный" && value != "Темный" && value != "Белый") 
                 {
                     throw new ArgumentException("Вид шоколада должен быть либо 'Молочный', либо 'Темный', либо 'Белый'");
                 }
@@ -39,21 +39,9 @@ namespace ClassLibrary1
         public override void Show()
         {
             base.Show();
-            Console.WriteLine($"Вид шоколада: {chocolate}"); 
+            Console.WriteLine($"Вид шоколада: {chocolate}");
         }
-        public override void Init()
-        {
-            base.Init();
-            Console.WriteLine("Выберите вид шоколада :либо 'Молочный', либо 'Темный', либо 'Белый' "); 
 
-            string value = Console.ReadLine(); 
-            while (value != "Молочный" && value != "Темный" && value != "Белый")
-            {
-                Console.WriteLine("Неправильно введен вид шоколада! Пожалуйста, введите еще раз, выбрав либо 'Молочный', либо 'Темный', либо 'Белый'");
-                value = Console.ReadLine();
-            }
-            chocolate = value;
-        }
         public override void RandomInit()
         {
             base.RandomInit();

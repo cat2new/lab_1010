@@ -108,4 +108,50 @@ public sealed class ConfProdUnitTest
         Assert.IsTrue(confProd1.Equals(confProd2));
         Assert.IsFalse(confProd1.Equals(confProd3));
     }
+
+    [TestMethod]
+    public void Clone_ModifyingCopy_DoesNotAffectOriginal()
+    {
+        // Arrange
+        ConfProd confProd1 = new ConfProd("Торт", 500, 1);
+        ConfProd confProd2 = (ConfProd)confProd1.Clone();
+
+        // Act
+        confProd2.Name = "Пирожное";
+        confProd2.Price = 300;
+
+        // Assert
+        Assert.AreEqual("Торт", confProd1.Name);
+        Assert.AreEqual(500, confProd1.Price);
+        Assert.AreEqual("Пирожное", confProd2.Name);
+        Assert.AreEqual(300, confProd2.Price);
+    }
+
+    [TestMethod]
+    public void ShallowCopy_ModifyingCopy_DoesNotAffectOriginal()
+    {
+        // Arrange
+        ConfProd confProd1 = new ConfProd("Торт", 500, 1);
+        ConfProd confProd2 = (ConfProd)confProd1.ShallowCopy();
+
+        // Act
+        confProd2.Name = "Пирожное";
+        confProd2.Price = 300;
+
+        // Assert
+        Assert.AreEqual("Торт", confProd1.Name);
+        Assert.AreEqual(500, confProd1.Price);
+        Assert.AreEqual("Пирожное", confProd2.Name);
+        Assert.AreEqual(300, confProd2.Price);
+    }
+
+    [TestMethod]
+    public void CompareTo_WithNull_ReturnsOne()
+    {
+        // Arrange
+        ConfProd confProd = new ConfProd("Торт", 500, 1);
+
+        // Act & Assert
+        Assert.AreEqual(1, confProd.CompareTo(null));
+    }
 }

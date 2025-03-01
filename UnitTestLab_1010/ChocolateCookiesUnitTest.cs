@@ -54,5 +54,60 @@ public class ChocolateCookiesUnitTest
         Assert.IsTrue(cookies1.Equals(cookies2));
         Assert.IsFalse(cookies1.Equals(cookies3));
     }
+    [TestMethod]
+    public void Equals_WithDifferentObject_ReturnsFalse()
+    {
+
+        ChocolateCookies cookies = new ChocolateCookies("Печенье", 500, "Форма", "Шоколад", 1);
+        object otherObject = new object();
+
+
+        Assert.IsFalse(cookies.Equals(otherObject));
+    }
+    [TestMethod]
+    public void Equals_WithNull_ReturnsFalse()
+    {
+       
+        ChocolateCookies cookies = new ChocolateCookies("Печенье", 500, "Форма", "Шоколад", 1);
+
+        Assert.IsFalse(cookies.Equals(null));
+    }
+    [TestMethod]
+    public void Chocolate_SetDarkChocolate_Success()
+    {
+        // Arrange
+        ChocolateCookies cookies = new ChocolateCookies();
+
+        // Act
+        cookies.Chocoolate = "Темный";
+
+        // Assert
+        Assert.AreEqual("Темный", cookies.Chocoolate);
+    }
+
+    [TestMethod]
+    public void Chocolate_SetWhiteChocolate_Success()
+    {
+        // Arrange
+        ChocolateCookies cookies = new ChocolateCookies();
+
+        // Act
+        cookies.Chocoolate = "Белый";
+
+        // Assert
+        Assert.AreEqual("Белый", cookies.Chocoolate);
+    }
+    [TestMethod]
+    public void RandomInit_SetsChocolateCorrectly()
+    {
+        // Arrange
+        ChocolateCookies cookies = new ChocolateCookies();
+
+        // Act
+        cookies.RandomInit();
+
+        // Assert
+        Assert.IsTrue(cookies.Chocoolate == "Молочный" || cookies.Chocoolate == "Темный" || cookies.Chocoolate == "Белый");
+    }
 
 }

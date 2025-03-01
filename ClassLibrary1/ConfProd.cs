@@ -90,7 +90,7 @@ namespace ClassLibrary1
             if (other == null) return 1;
             return Price.CompareTo(other.Price);
         }
-      
+        
         public object Clone()
         {
             return new ConfProd(this.Name, this.Price, this.id.Number);

@@ -44,7 +44,7 @@ namespace ClassLibrary1
             base.Init();
             Console.WriteLine("Введите форму печенья :либо 'Круг', либо 'Звезда' ");
 
-            string value = Console.ReadLine(); 
+            string value = Console.ReadLine();
             while (value != "Круг" && value != "Звезда")
             {
                 Console.WriteLine("Неправильно введена форма печенья! Пожалуйста, введите еще раз, выбрав 'Круг' или 'Звезда'");
@@ -57,7 +57,7 @@ namespace ClassLibrary1
             base.RandomInit();
             Random rand = new Random();
             string[] shapes = { "Круг", "Звезда" };
-            shape = shapes[rand.Next( shapes.Length) ];
+            shape = shapes[rand.Next(shapes.Length)];
         }
 
         public override bool Equals(object? obj)
