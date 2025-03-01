@@ -1,4 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibrary1.Cakes">
+    <Position X="8.5" Y="3.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ClassLibrary1.ChocolateCookies">
+    <Position X="11.25" Y="6.25" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ClassLibrary1.ConfProd">
+    <Position X="5.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLibrary1.Cookies">
+    <Position X="8.5" Y="6.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ConfLib.IdNumber">
+    <Position X="14.25" Y="1" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="lab_1010.Program">
+    <Position X="11" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAAAAAAAAAAAAAgAgEBgCAARAAAQDA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkLib.Mark">
+    <Position X="14.5" Y="4" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ClassLibrary1.IInit">
+    <Position X="16.75" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
