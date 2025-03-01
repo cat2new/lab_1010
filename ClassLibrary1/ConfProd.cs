@@ -2,7 +2,7 @@
 
 namespace ClassLibrary1
 {
-    public class ConfProd : IInit, IComparable<ConfProd>, IComparer<ConfProd>, ICloneable
+    public class ConfProd : IInit, IComparable<ConfProd>, ICloneable
     {
         private string name;
         private double price;
@@ -90,10 +90,7 @@ namespace ClassLibrary1
             if (other == null) return 1;
             return Price.CompareTo(other.Price);
         }
-        public int Compare(ConfProd pre, ConfProd next)
-        {
-            return string.Compare(pre.Name, next.Name);
-        }
+      
         public object Clone()
         {
             return new ConfProd(this.Name, this.Price, this.id.Number);

@@ -1,4 +1,5 @@
 using ClassLibrary1;
+using ConfLib;
 
 namespace UnitTestLab_1010;
 
@@ -69,10 +70,11 @@ public sealed class ConfProdUnitTest
     {
         ConfProd confProd1 = new ConfProd("Изделие 1", 500, 1);
         ConfProd confProd2 = new ConfProd("Изделие 2", 400, 2);
+        ConfProdComparer sc = new();
 
-        Assert.IsTrue(confProd1.Compare(confProd1, confProd2) < 0);
-        Assert.IsTrue(confProd1.Compare(confProd2, confProd1) > 0);
-        Assert.AreEqual(0, confProd1.Compare(confProd1, confProd1));
+        Assert.IsTrue(sc.Compare(confProd1, confProd2) < 0);
+        Assert.IsTrue(sc.Compare(confProd2, confProd1) > 0);
+        Assert.AreEqual(0, sc.Compare(confProd1, confProd1));
     }
     [TestMethod]
     public void Clone_CreatesDeepCopy()

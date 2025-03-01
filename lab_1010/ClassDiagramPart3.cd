@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ClassLibrary1.Cakes">
-    <Position X="6.5" Y="2.25" Width="2" />
+  <Class Name="ClassLibrary1.Cakes" Collapsed="true">
+    <Position X="7.75" Y="1.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Class Name="ClassLibrary1.ChocolateCookies">
-    <Position X="9.5" Y="5.25" Width="2.75" />
+  <Class Name="ClassLibrary1.ChocolateCookies" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="ClassLibrary1.ConfProd">
-    <Position X="3.5" Y="3.25" Width="2.25" />
+    <Position X="4.25" Y="0.75" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ClassLibrary1.Cookies">
-    <Position X="6.5" Y="5.25" Width="2.25" />
+  <Class Name="ClassLibrary1.Cookies" Collapsed="true">
+    <Position X="8.5" Y="4" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Class Name="ConfLib.IdNumber">
-    <Position X="2.75" Y="0.5" Width="2.25" />
+  <Class Name="ConfLib.IdNumber" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Class Name="MarkLib.Mark">
-    <Position X="0.5" Y="3.25" Width="2.5" />
+  <Class Name="MarkLib.Mark" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="ClassLibrary1.IInit">
-    <Position X="0.75" Y="0.5" Width="1.5" />
+  <Interface Name="ClassLibrary1.IInit" Collapsed="true">
+    <Position X="2" Y="3.75" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Font Name="Segoe UI" Size="9" />

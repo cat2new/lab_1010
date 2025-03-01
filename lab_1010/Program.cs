@@ -323,7 +323,7 @@ namespace lab_1010
                     case "1":
                         Console.Write("Введите название для поиска");
                         string nameToFind = Console.ReadLine();
-                        int index = Array.BinarySearch(products, new ConfProd(nameToFind, 0, 1), new ConfProd());
+                        int index = Array.BinarySearch(products, new ConfProd(nameToFind, 0, 1), new ConfProdComparer());
                         if (index >= 0)
                         {
                             Console.WriteLine($"\nНайден объект с названием {nameToFind:F2}:");
@@ -370,7 +370,7 @@ namespace lab_1010
                         SortIComparable(products);
                         break;
                     case "2":
-                        Array.Sort(products, new ConfProd());
+                        Array.Sort(products, new ConfProdComparer());
                         Console.WriteLine("Массив отсортирован по названию!");
                         foreach (ConfProd product in products)
                         {
